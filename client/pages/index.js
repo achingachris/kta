@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Layout from "../layout/Layout";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
@@ -26,19 +26,7 @@ import PopupWidget from "../components/popupWidget";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Kenya Tech Awards</title>
-        <meta
-          name="description"
-          content="
-          Kenya Tech Awards offers a unique forum in which academics, educators, start-ups, entrepreneurs, policymakers and students share their stories with fellow interest groups to quench their
-          thirst for Innovative Solutions in the tech sector."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Navbar />
+    <Layout>
       <Hero />
       <SectionTitle pretitle="KTA Benefits" title=" Why be part of us">
         Attending the Kenya Tech Awards offers networking with industry leaders,
@@ -69,8 +57,7 @@ export default function Home() {
       </SectionTitle>
       <Faq />
       <Cta />
-      <Footer />
       <PopupWidget />
-    </>
+    </Layout>
   );
 }
