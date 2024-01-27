@@ -1,16 +1,12 @@
 import Layout from "../layout/Layout";
-import Hero from "../components/hero";
-import Navbar from "../components/navbar";
-import SectionTitle from "../components/sectionTitle";
-
-import { benefitOne, benefitTwo } from "../components/data";
-import Video from "../components/video";
-import Benefits from "../components/benefits";
-import Footer from "../components/footer";
-import Testimonials from "../components/testimonials";
-import Cta from "../components/cta";
-import Faq from "../components/faq";
-import PopupWidget from "../components/popupWidget";
+import Hero from "../components/homePage/hero";
+import SectionTitle from "../components/shared/sectionTitle";
+import { benefitOne, benefitTwo } from "../data/data";
+import ImageCard from "../components/shared/imageCard";
+import Benefits from "../components/homePage/benefits";
+import Cta from "../components/homePage/cta";
+import Faq from "../components/homePage/faq";
+import PopupWidget from "../components/homePage/popupWidget";
 
 //import dynamic from "next/dynamic";
 
@@ -42,15 +38,7 @@ export default function Home() {
         Highlighting the transformative power of tech, this section showcases a
         dynamic video about the Kenya Tech Awards.
       </SectionTitle>
-      <Video />
-      {/* <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said"
-      >
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
-      <Testimonials /> */}
+      <ImageCard imageURL="/brand/logo-bg.jpg" />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.

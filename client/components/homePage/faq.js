@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "./container";
+import Container from "../shared/container";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
 
@@ -36,19 +36,22 @@ export default function Faq() {
 const faqdata = [
   {
     question: "Is registration for the Kenya Tech Awards free?",
-    answer: "Yes, attending the Kenya Tech Awards is free, but registration is required.",
+    answer:
+      "Yes, attending the Kenya Tech Awards is free, but registration is required.",
   },
   {
     question: "Can I nominate someone for multiple categories?",
-    answer: "Yes, you can nominate individuals or organizations for multiple relevant categories.",
+    answer:
+      "Yes, you can nominate individuals or organizations for multiple relevant categories.",
   },
   {
     question: "What is the nomination cancellation policy?",
-    answer: "Nominations can be withdrawn any time before the deadline. No refunds are applicable as the event is free.",
+    answer:
+      "Nominations can be withdrawn any time before the deadline. No refunds are applicable as the event is free.",
   },
   {
     question: "Do you offer assistance for event participation?",
-    answer: "Yes, we provide guidance and support for participants. Please contact our helpdesk for more information.",
+    answer:
+      "Yes, we provide guidance and support for participants. Please contact our helpdesk for more information.",
   },
-  
 ];

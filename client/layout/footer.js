@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 // import Container from "./container";
-import Container from "../components/container";
+import Container from "../components/shared/container";
 
 export default function Footer() {
   const navigation = ["Categories", "Nominations", "Sponsors", "About Us"];

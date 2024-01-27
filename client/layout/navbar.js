@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ThemeChanger from "../components/DarkSwitch";
+import ThemeChanger from "../utils/DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 
 export default function Navbar() {
